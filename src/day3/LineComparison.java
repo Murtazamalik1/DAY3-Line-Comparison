@@ -14,10 +14,16 @@ public class LineComparison {
         System.out.println("Length of line1 = " + lengthOfLine1);
         System.out.println("Length of line2 = " + lengthOfLine2);
 
-        if (lengthOfLine1 == lengthOfLine2) {
-            System.out.println("Lines are equal");
-        } else {
-            System.out.println("Lines are not equal");
+        Integer l1 = new Integer((int) lengthOfLine1);
+        Integer l2 = new Integer((int) lengthOfLine1);
+
+        if (l1.compareTo(l2) > 0) {
+            System.out.println("Line1 is greater then Line2");
+        } else if (l1.compareTo(l2) < 0) {
+            System.out.println("Line1 is less then Line2");
+        }
+        else {
+            System.out.println("Both Lines are not equal");
         }
 
     }
